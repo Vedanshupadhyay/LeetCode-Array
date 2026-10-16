@@ -4,7 +4,7 @@ class Solution {
         int less =0;
         int more =nums.length-1;
         while(less <= more){
-            int mid = less +(more - less )/2;
+            int mid = (less + more )/2;
             if(nums[mid] == target){
                 return mid;
             }
